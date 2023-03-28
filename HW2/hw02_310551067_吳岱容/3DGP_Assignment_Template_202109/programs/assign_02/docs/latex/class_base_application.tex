@@ -1,0 +1,218 @@
+\hypertarget{class_base_application}{}\doxysection{Base\+Application Class Reference}
+\label{class_base_application}\index{BaseApplication@{BaseApplication}}
+Inheritance diagram for Base\+Application\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.909091cm]{class_base_application}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_base_application_a8a14a65a29118dd75173aa68678a05e1}\label{class_base_application_a8a14a65a29118dd75173aa68678a05e1}} 
+virtual void {\bfseries go} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_base_application_a5853d0e148cb85b0297a6885e1d33a89}\label{class_base_application_a5853d0e148cb85b0297a6885e1d33a89}} 
+virtual bool {\bfseries setup} ()
+\item 
+\mbox{\Hypertarget{class_base_application_a62ed46f90e9f82cc810997647a2c587e}\label{class_base_application_a62ed46f90e9f82cc810997647a2c587e}} 
+virtual bool {\bfseries configure} (void)
+\item 
+virtual void \mbox{\hyperlink{class_base_application_ad5bc9655041e1849a4c13f444a3712bd}{choose\+Scene\+Manager}} (void)
+\item 
+virtual void \mbox{\hyperlink{class_base_application_afa9d51527763cf9aee9cd4e1b1039d55}{create\+Camera}} (void)
+\item 
+\mbox{\Hypertarget{class_base_application_aff6fd9ff1ff0978cc68f19dd65be4778}\label{class_base_application_aff6fd9ff1ff0978cc68f19dd65be4778}} 
+virtual void {\bfseries create\+Frame\+Listener} (void)
+\item 
+virtual void \mbox{\hyperlink{class_base_application_aa97beeb4059b17d0ec22eae33286ec2d}{create\+Scene}} (void)=0
+\item 
+\mbox{\Hypertarget{class_base_application_a365146059b25391fe400f5fdb94f011e}\label{class_base_application_a365146059b25391fe400f5fdb94f011e}} 
+virtual void {\bfseries destroy\+Scene} (void)
+\item 
+virtual void \mbox{\hyperlink{class_base_application_a1f8f6730cae6ec769d8730b1af48486e}{create\+Viewports}} (void)
+\item 
+\mbox{\Hypertarget{class_base_application_ae27301702f1e5de64619a39b1929f1f9}\label{class_base_application_ae27301702f1e5de64619a39b1929f1f9}} 
+virtual void {\bfseries setup\+Resources} (void)
+\item 
+\mbox{\Hypertarget{class_base_application_a9b77972f0f747a61e1f8ceba2ad47641}\label{class_base_application_a9b77972f0f747a61e1f8ceba2ad47641}} 
+virtual void {\bfseries create\+Resource\+Listener} (void)
+\item 
+\mbox{\Hypertarget{class_base_application_aaeb764e637dd87601a81a80156659d88}\label{class_base_application_aaeb764e637dd87601a81a80156659d88}} 
+virtual void {\bfseries load\+Resources} (void)
+\item 
+virtual bool \mbox{\hyperlink{class_base_application_a03912a0f38b38fede7f08a2571e8fc56}{frame\+Rendering\+Queued}} (const Ogre\+::\+Frame\+Event \&evt)
+\item 
+virtual bool \mbox{\hyperlink{class_base_application_acfa977f04e435f18018ece805c1277ec}{key\+Pressed}} (const OIS\+::\+Key\+Event \&arg)
+\item 
+virtual bool \mbox{\hyperlink{class_base_application_aba5c7c9dea7a0efc58b89310bae547e5}{key\+Released}} (const OIS\+::\+Key\+Event \&arg)
+\item 
+virtual bool \mbox{\hyperlink{class_base_application_a126e59cb246b061e51eb6ce06a2ee8f4}{mouse\+Moved}} (const OIS\+::\+Mouse\+Event \&arg)
+\item 
+virtual bool \mbox{\hyperlink{class_base_application_a9255dfc1eabefd11c474ec45a6622504}{mouse\+Pressed}} (const OIS\+::\+Mouse\+Event \&arg, OIS\+::\+Mouse\+Button\+ID id)
+\item 
+virtual bool \mbox{\hyperlink{class_base_application_aa102c5859c14c0690c749994a446b53d}{mouse\+Released}} (const OIS\+::\+Mouse\+Event \&arg, OIS\+::\+Mouse\+Button\+ID id)
+\item 
+\mbox{\Hypertarget{class_base_application_afacf8a797588592ef0abbad593f10cfa}\label{class_base_application_afacf8a797588592ef0abbad593f10cfa}} 
+virtual void {\bfseries window\+Resized} (Ogre\+::\+Render\+Window $\ast$rw)
+\item 
+\mbox{\Hypertarget{class_base_application_ae0e37ac54a31ff6e51d58c7654ad1b90}\label{class_base_application_ae0e37ac54a31ff6e51d58c7654ad1b90}} 
+virtual void {\bfseries window\+Closed} (Ogre\+::\+Render\+Window $\ast$rw)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_base_application_add84ba707dc6c57e6283f214b1274110}\label{class_base_application_add84ba707dc6c57e6283f214b1274110}} 
+Ogre\+::\+Root $\ast$ {\bfseries m\+Root}
+\item 
+\mbox{\Hypertarget{class_base_application_a3829c6b12afe911e97e6b4524b33a38b}\label{class_base_application_a3829c6b12afe911e97e6b4524b33a38b}} 
+Ogre\+::\+Camera $\ast$ {\bfseries m\+Camera}
+\item 
+\mbox{\Hypertarget{class_base_application_a8a7684f4f9a57ed3089048ad1a913b2d}\label{class_base_application_a8a7684f4f9a57ed3089048ad1a913b2d}} 
+Ogre\+::\+Scene\+Manager $\ast$ {\bfseries m\+Scene\+Mgr}
+\item 
+\mbox{\Hypertarget{class_base_application_ac5d8e9c81e036897bc82f81eff8c570f}\label{class_base_application_ac5d8e9c81e036897bc82f81eff8c570f}} 
+Ogre\+::\+Render\+Window $\ast$ {\bfseries m\+Window}
+\item 
+\mbox{\Hypertarget{class_base_application_a765e0df01c141a16df3178ab4f17afe6}\label{class_base_application_a765e0df01c141a16df3178ab4f17afe6}} 
+Ogre\+::\+String {\bfseries m\+Resources\+Cfg}
+\item 
+\mbox{\Hypertarget{class_base_application_a04f2fe47fa164fd78d986dc0df70b7fb}\label{class_base_application_a04f2fe47fa164fd78d986dc0df70b7fb}} 
+Ogre\+::\+String {\bfseries m\+Plugins\+Cfg}
+\item 
+\mbox{\Hypertarget{class_base_application_a7faa397f4f4861ee8c361a01e90b4416}\label{class_base_application_a7faa397f4f4861ee8c361a01e90b4416}} 
+Ogre\+Bites\+::\+Sdk\+Tray\+Manager $\ast$ {\bfseries m\+Tray\+Mgr}
+\item 
+\mbox{\Hypertarget{class_base_application_a9ae38dea6316058549151fff66a91fcd}\label{class_base_application_a9ae38dea6316058549151fff66a91fcd}} 
+Ogre\+Bites\+::\+Sdk\+Camera\+Man $\ast$ {\bfseries m\+Camera\+Man}
+\item 
+\mbox{\Hypertarget{class_base_application_a6a11054ca61efdf558e0ff1b2de43a12}\label{class_base_application_a6a11054ca61efdf558e0ff1b2de43a12}} 
+Ogre\+Bites\+::\+Params\+Panel $\ast$ {\bfseries m\+Details\+Panel}
+\item 
+\mbox{\Hypertarget{class_base_application_ac7e861799862cb645f1d78b170aef80d}\label{class_base_application_ac7e861799862cb645f1d78b170aef80d}} 
+bool {\bfseries m\+Cursor\+Was\+Visible}
+\item 
+\mbox{\Hypertarget{class_base_application_a755f26d3a9915aaf830750d877e39d86}\label{class_base_application_a755f26d3a9915aaf830750d877e39d86}} 
+bool {\bfseries m\+Shut\+Down}
+\item 
+\mbox{\Hypertarget{class_base_application_abc9503c8462e225b5d0d55c952d9e4a9}\label{class_base_application_abc9503c8462e225b5d0d55c952d9e4a9}} 
+OIS\+::\+Input\+Manager $\ast$ {\bfseries m\+Input\+Manager}
+\item 
+\mbox{\Hypertarget{class_base_application_add9b97fbe64da2814d3af113bac58c43}\label{class_base_application_add9b97fbe64da2814d3af113bac58c43}} 
+OIS\+::\+Mouse $\ast$ {\bfseries m\+Mouse}
+\item 
+\mbox{\Hypertarget{class_base_application_a9d6e19cf50c47379fbaae55bff28079c}\label{class_base_application_a9d6e19cf50c47379fbaae55bff28079c}} 
+OIS\+::\+Keyboard $\ast$ {\bfseries m\+Keyboard}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_base_application_ad5bc9655041e1849a4c13f444a3712bd}\label{class_base_application_ad5bc9655041e1849a4c13f444a3712bd}} 
+\index{BaseApplication@{BaseApplication}!chooseSceneManager@{chooseSceneManager}}
+\index{chooseSceneManager@{chooseSceneManager}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{chooseSceneManager()}{chooseSceneManager()}}
+{\footnotesize\ttfamily void Base\+Application\+::choose\+Scene\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_aba97a29d983586d2dc8e108d3bccf721}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_afa9d51527763cf9aee9cd4e1b1039d55}\label{class_base_application_afa9d51527763cf9aee9cd4e1b1039d55}} 
+\index{BaseApplication@{BaseApplication}!createCamera@{createCamera}}
+\index{createCamera@{createCamera}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{createCamera()}{createCamera()}}
+{\footnotesize\ttfamily void Base\+Application\+::create\+Camera (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_aa97beeb4059b17d0ec22eae33286ec2d}\label{class_base_application_aa97beeb4059b17d0ec22eae33286ec2d}} 
+\index{BaseApplication@{BaseApplication}!createScene@{createScene}}
+\index{createScene@{createScene}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{createScene()}{createScene()}}
+{\footnotesize\ttfamily virtual void Base\+Application\+::create\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_a1f8f6730cae6ec769d8730b1af48486e}\label{class_base_application_a1f8f6730cae6ec769d8730b1af48486e}} 
+\index{BaseApplication@{BaseApplication}!createViewports@{createViewports}}
+\index{createViewports@{createViewports}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{createViewports()}{createViewports()}}
+{\footnotesize\ttfamily void Base\+Application\+::create\+Viewports (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_a03912a0f38b38fede7f08a2571e8fc56}\label{class_base_application_a03912a0f38b38fede7f08a2571e8fc56}} 
+\index{BaseApplication@{BaseApplication}!frameRenderingQueued@{frameRenderingQueued}}
+\index{frameRenderingQueued@{frameRenderingQueued}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{frameRenderingQueued()}{frameRenderingQueued()}}
+{\footnotesize\ttfamily bool Base\+Application\+::frame\+Rendering\+Queued (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_a8d59bcb54aa7e5f92250f4193a6ea2b7}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_acfa977f04e435f18018ece805c1277ec}\label{class_base_application_acfa977f04e435f18018ece805c1277ec}} 
+\index{BaseApplication@{BaseApplication}!keyPressed@{keyPressed}}
+\index{keyPressed@{keyPressed}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{keyPressed()}{keyPressed()}}
+{\footnotesize\ttfamily bool Base\+Application\+::key\+Pressed (\begin{DoxyParamCaption}\item[{const OIS\+::\+Key\+Event \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_aba5c7c9dea7a0efc58b89310bae547e5}\label{class_base_application_aba5c7c9dea7a0efc58b89310bae547e5}} 
+\index{BaseApplication@{BaseApplication}!keyReleased@{keyReleased}}
+\index{keyReleased@{keyReleased}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{keyReleased()}{keyReleased()}}
+{\footnotesize\ttfamily bool Base\+Application\+::key\+Released (\begin{DoxyParamCaption}\item[{const OIS\+::\+Key\+Event \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_a126e59cb246b061e51eb6ce06a2ee8f4}\label{class_base_application_a126e59cb246b061e51eb6ce06a2ee8f4}} 
+\index{BaseApplication@{BaseApplication}!mouseMoved@{mouseMoved}}
+\index{mouseMoved@{mouseMoved}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{mouseMoved()}{mouseMoved()}}
+{\footnotesize\ttfamily bool Base\+Application\+::mouse\+Moved (\begin{DoxyParamCaption}\item[{const OIS\+::\+Mouse\+Event \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_a5b9bd30851c38fa6c2fa102f30e9629a}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_a9255dfc1eabefd11c474ec45a6622504}\label{class_base_application_a9255dfc1eabefd11c474ec45a6622504}} 
+\index{BaseApplication@{BaseApplication}!mousePressed@{mousePressed}}
+\index{mousePressed@{mousePressed}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{mousePressed()}{mousePressed()}}
+{\footnotesize\ttfamily bool Base\+Application\+::mouse\+Pressed (\begin{DoxyParamCaption}\item[{const OIS\+::\+Mouse\+Event \&}]{arg,  }\item[{OIS\+::\+Mouse\+Button\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_af0e5dec72c58e157c2a63ffa5fd8c7c7}{Basic\+Tutorial\+\_\+00}}.
+
+\mbox{\Hypertarget{class_base_application_aa102c5859c14c0690c749994a446b53d}\label{class_base_application_aa102c5859c14c0690c749994a446b53d}} 
+\index{BaseApplication@{BaseApplication}!mouseReleased@{mouseReleased}}
+\index{mouseReleased@{mouseReleased}!BaseApplication@{BaseApplication}}
+\doxysubsubsection{\texorpdfstring{mouseReleased()}{mouseReleased()}}
+{\footnotesize\ttfamily bool Base\+Application\+::mouse\+Released (\begin{DoxyParamCaption}\item[{const OIS\+::\+Mouse\+Event \&}]{arg,  }\item[{OIS\+::\+Mouse\+Button\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_basic_tutorial__00_aeb28d7b68dcaf536f513e25afb6947d7}{Basic\+Tutorial\+\_\+00}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dora/\+Desktop/source/Base\+Application.\+h\item 
+C\+:/\+Users/\+Dora/\+Desktop/source/Base\+Application.\+cpp\end{DoxyCompactItemize}

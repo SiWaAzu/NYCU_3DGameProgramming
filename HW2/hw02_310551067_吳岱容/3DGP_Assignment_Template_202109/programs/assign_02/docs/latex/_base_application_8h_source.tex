@@ -1,0 +1,103 @@
+\hypertarget{_base_application_8h_source}{}\doxysection{Base\+Application.\+h}
+\label{_base_application_8h_source}\index{C:/Users/Dora/Desktop/source/BaseApplication.h@{C:/Users/Dora/Desktop/source/BaseApplication.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{comment}{// DO NOT DELETE THIS LINE: 2018/09/20. 3D Game Programming}}
+\DoxyCodeLine{4 \textcolor{comment}{}\textcolor{comment}{/*}}
+\DoxyCodeLine{5 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{6 \textcolor{comment}{Filename:    BaseApplication.h}}
+\DoxyCodeLine{7 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{8 \textcolor{comment}{}}
+\DoxyCodeLine{9 \textcolor{comment}{This source file is part of the}}
+\DoxyCodeLine{10 \textcolor{comment}{   \_\_\_                 \_\_    \_\_ \_ \_    \_ }}
+\DoxyCodeLine{11 \textcolor{comment}{  /\_\_\_\(\backslash\)\_\_ \_ \_ \_\_ \_\_\_  / / /\(\backslash\) \(\backslash\) (\_) | \_(\_)}}
+\DoxyCodeLine{12 \textcolor{comment}{ //  // \_` | '\_\_/ \_ \(\backslash\) \(\backslash\) \(\backslash\)/  \(\backslash\)/ / | |/ / |}}
+\DoxyCodeLine{13 \textcolor{comment}{/ \(\backslash\)\_// (\_| | | |  \_\_/  \(\backslash\)  /\(\backslash\)  /| |   <| |}}
+\DoxyCodeLine{14 \textcolor{comment}{\(\backslash\)\_\_\_/ \(\backslash\)\_\_, |\_|  \(\backslash\)\_\_\_|   \(\backslash\)/  \(\backslash\)/ |\_|\_|\(\backslash\)\_\(\backslash\)\_|}}
+\DoxyCodeLine{15 \textcolor{comment}{      |\_\_\_/                              }}
+\DoxyCodeLine{16 \textcolor{comment}{      Tutorial Framework}}
+\DoxyCodeLine{17 \textcolor{comment}{      http://www.ogre3d.org/tikiwiki/}}
+\DoxyCodeLine{18 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{19 \textcolor{comment}{*/}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#ifndef \_\_BaseApplication\_h\_}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define \_\_BaseApplication\_h\_}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <OgreCamera.h>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <OgreEntity.h>}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <OgreLogManager.h>}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include <OgreRoot.h>}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <OgreViewport.h>}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include <OgreSceneManager.h>}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include <OgreRenderWindow.h>}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include <OgreConfigFile.h>}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include <OISEvents.h>}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include <OISInputManager.h>}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include <OISKeyboard.h>}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include <OISMouse.h>}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#include <SdkTrays.h>}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#include <SdkCameraMan.h>}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{class }\mbox{\hyperlink{class_base_application}{BaseApplication}} : \textcolor{keyword}{public} Ogre::FrameListener, \textcolor{keyword}{public} Ogre::WindowEventListener, \textcolor{keyword}{public} OIS::KeyListener, \textcolor{keyword}{public} OIS::MouseListener, OgreBites::SdkTrayListener}
+\DoxyCodeLine{41 \{}
+\DoxyCodeLine{42 \textcolor{keyword}{public}:}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_base_application}{BaseApplication}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{44     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_base_application}{\string~BaseApplication}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} go(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{49     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} setup();}
+\DoxyCodeLine{50     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} configure(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{51     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} chooseSceneManager(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{52     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} createCamera(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{53     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} createFrameListener(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{54     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} createScene(\textcolor{keywordtype}{void}) = 0; \textcolor{comment}{// Override me!}}
+\DoxyCodeLine{55     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} destroyScene(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{56     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} createViewports(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{57     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setupResources(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{58     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} createResourceListener(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{59     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} loadResources(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{comment}{// Ogre::FrameListener}}
+\DoxyCodeLine{62     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} frameRenderingQueued(\textcolor{keyword}{const} Ogre::FrameEvent\& evt);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{comment}{// OIS::KeyListener}}
+\DoxyCodeLine{65     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} keyPressed( \textcolor{keyword}{const} OIS::KeyEvent \&arg );}
+\DoxyCodeLine{66     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} keyReleased( \textcolor{keyword}{const} OIS::KeyEvent \&arg );}
+\DoxyCodeLine{67     \textcolor{comment}{// OIS::MouseListener}}
+\DoxyCodeLine{68     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} mouseMoved( \textcolor{keyword}{const} OIS::MouseEvent \&arg );}
+\DoxyCodeLine{69     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} mousePressed( \textcolor{keyword}{const} OIS::MouseEvent \&arg, OIS::MouseButtonID \textcolor{keywordtype}{id} );}
+\DoxyCodeLine{70     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} mouseReleased( \textcolor{keyword}{const} OIS::MouseEvent \&arg, OIS::MouseButtonID \textcolor{keywordtype}{id} );}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{comment}{// Ogre::WindowEventListener}}
+\DoxyCodeLine{73     \textcolor{comment}{//Adjust mouse clipping area}}
+\DoxyCodeLine{74     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} windowResized(Ogre::RenderWindow* rw);}
+\DoxyCodeLine{75     \textcolor{comment}{//Unattach OIS before window shutdown (very important under Linux)}}
+\DoxyCodeLine{76     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} windowClosed(Ogre::RenderWindow* rw);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     Ogre::Root *mRoot;}
+\DoxyCodeLine{79     Ogre::Camera* mCamera;}
+\DoxyCodeLine{80     Ogre::SceneManager* mSceneMgr;}
+\DoxyCodeLine{81     Ogre::RenderWindow* mWindow;}
+\DoxyCodeLine{82     Ogre::String mResourcesCfg;}
+\DoxyCodeLine{83     Ogre::String mPluginsCfg;}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{comment}{// OgreBites}}
+\DoxyCodeLine{86     OgreBites::SdkTrayManager* mTrayMgr;}
+\DoxyCodeLine{87     OgreBites::SdkCameraMan* mCameraMan;       \textcolor{comment}{// basic camera controller}}
+\DoxyCodeLine{88     OgreBites::ParamsPanel* mDetailsPanel;     \textcolor{comment}{// sample details panel}}
+\DoxyCodeLine{89     \textcolor{keywordtype}{bool} mCursorWasVisible;                    \textcolor{comment}{// was cursor visible before dialog appeared}}
+\DoxyCodeLine{90     \textcolor{keywordtype}{bool} mShutDown;}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \textcolor{comment}{//OIS Input devices}}
+\DoxyCodeLine{93     OIS::InputManager* mInputManager;}
+\DoxyCodeLine{94     OIS::Mouse*    mMouse;}
+\DoxyCodeLine{95     OIS::Keyboard* mKeyboard;}
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \#ifndef \_\_BaseApplication\_h\_}}
+
+\end{DoxyCode}

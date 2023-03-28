@@ -1,0 +1,342 @@
+\hypertarget{class_basic_tutorial__00}{}\doxysection{Basic\+Tutorial\+\_\+00 Class Reference}
+\label{class_basic_tutorial__00}\index{BasicTutorial\_00@{BasicTutorial\_00}}
+
+
+3D Game Programming ~\newline
+My Name\+: Dai Rong Wu ~\newline
+My ID\+: 310551067 ~\newline
+My Email\+: \href{mailto:azusa871227@gmail.com}{\texttt{ azusa871227@gmail.\+com}} ~\newline
+ Date\+: 2021/10/31 ~\newline
+This is an assignment of 3D Game Programming. ~\newline
+Application class.  
+
+
+
+
+{\ttfamily \#include $<$Tutorial\+Application.\+h$>$}
+
+Inheritance diagram for Basic\+Tutorial\+\_\+00\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.909091cm]{class_basic_tutorial__00}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_basic_tutorial__00_aba97a29d983586d2dc8e108d3bccf721}{choose\+Scene\+Manager}} (void)
+\begin{DoxyCompactList}\small\item\em Define Scene\+Mgrs. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}{create\+Camera}} (void)
+\begin{DoxyCompactList}\small\item\em Call funcitons to create cameras. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}{create\+Viewports}} (void)
+\begin{DoxyCompactList}\small\item\em Call funcitons to create viewports. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}{create\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Call functions to create scenes. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_basic_tutorial__00_a5b9bd30851c38fa6c2fa102f30e9629a}{mouse\+Moved}} (const OIS\+::\+Mouse\+Event \&arg)
+\begin{DoxyCompactList}\small\item\em Deal with the task when mouse is moved. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_basic_tutorial__00_af0e5dec72c58e157c2a63ffa5fd8c7c7}{mouse\+Pressed}} (const OIS\+::\+Mouse\+Event \&arg, OIS\+::\+Mouse\+Button\+ID id)
+\begin{DoxyCompactList}\small\item\em Deal with the task when mouse is pressed. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_basic_tutorial__00_aeb28d7b68dcaf536f513e25afb6947d7}{mouse\+Released}} (const OIS\+::\+Mouse\+Event \&arg, OIS\+::\+Mouse\+Button\+ID id)
+\begin{DoxyCompactList}\small\item\em Deal with the task when mouse is moved. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_basic_tutorial__00_a8d59bcb54aa7e5f92250f4193a6ea2b7}{frame\+Rendering\+Queued}} (const Ogre\+::\+Frame\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Deal with the movement of the robots and the animation. ~\newline
+It is a Queue store frame need to be rendered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a94e281a96584a25bf57b1c5e73737c81}\label{class_basic_tutorial__00_a94e281a96584a25bf57b1c5e73737c81}} 
+virtual bool {\bfseries frame\+Started} (const Ogre\+::\+Frame\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Update animation. ~\newline
+ Update the selection rectangle and light rotation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a6d4684502f2f7b2cf628a975d7750d8e}\label{class_basic_tutorial__00_a6d4684502f2f7b2cf628a975d7750d8e}} 
+void {\bfseries create\+Viewport\+\_\+00} (void)
+\begin{DoxyCompactList}\small\item\em Create a viewport Create a viewport for the entire screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a2801a2f0d91d80b471da48344d2ccccf}\label{class_basic_tutorial__00_a2801a2f0d91d80b471da48344d2ccccf}} 
+void {\bfseries create\+Viewport\+\_\+01} (void)
+\begin{DoxyCompactList}\small\item\em Create a viewport Create a viewport for the smallmap. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a3479c50dbf8dc06a7ea77014eb94c6e7}\label{class_basic_tutorial__00_a3479c50dbf8dc06a7ea77014eb94c6e7}} 
+void {\bfseries create\+Camera\+\_\+00} ()
+\begin{DoxyCompactList}\small\item\em Create the main camera ~\newline
+Create the main camera, set the direction, position, and clip distance, and also give it manipulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a8745a127adeb69fa769f832fd41412c0}\label{class_basic_tutorial__00_a8745a127adeb69fa769f832fd41412c0}} 
+void {\bfseries create\+Camera\+\_\+01} ()
+\begin{DoxyCompactList}\small\item\em Create the small camera ~\newline
+Create the camera for the small map, set the direction, position, clip distance, and ratio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_aa84173e509858146cbfb98274c1ef56e}\label{class_basic_tutorial__00_aa84173e509858146cbfb98274c1ef56e}} 
+void {\bfseries create\+Scene\+\_\+00} ()
+\begin{DoxyCompactList}\small\item\em Create the main scene ~\newline
+Create the main scene including all the entity required and attach them to the scene node. ~\newline
+Also set the entities\textquotesingle{}s scales, positions, and directions. ~\newline
+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_aad14e1ca565797c4b7dcff31bc0e1494}\label{class_basic_tutorial__00_aad14e1ca565797c4b7dcff31bc0e1494}} 
+void {\bfseries create\+Scene\+\_\+01} ()
+\begin{DoxyCompactList}\small\item\em Do nothing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}{key\+Pressed}} (const OIS\+::\+Key\+Event \&arg)
+\begin{DoxyCompactList}\small\item\em Deal with the key pressed events. ~\newline
+ Perform the task as the spec requires. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}{key\+Released}} (const OIS\+::\+Key\+Event \&arg)
+\begin{DoxyCompactList}\small\item\em Deal with the key released events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_aba8ab595a3f9395bcfedd8c42861060a}\label{class_basic_tutorial__00_aba8ab595a3f9395bcfedd8c42861060a}} 
+void {\bfseries init\+Particle\+System\+For\+Explosion} ()
+\begin{DoxyCompactList}\small\item\em Initialization of particle systems of each robot. ~\newline
+ Let the scene node of particle systems become the child of robots\textquotesingle{} scene node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a12ee4c02ecf504f5ac0112706bc88b28}\label{class_basic_tutorial__00_a12ee4c02ecf504f5ac0112706bc88b28}} 
+void {\bfseries set\+Off\+Particle\+System} ()
+\begin{DoxyCompactList}\small\item\em Turn on or turn off the effcts. ~\newline
+ Decide the effect should be turned on or off. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a6676a92b50e9b43634d4c66488537b73}\label{class_basic_tutorial__00_a6676a92b50e9b43634d4c66488537b73}} 
+Ogre\+::\+Viewport $\ast$ {\bfseries m\+Viewport\+Arr} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Viewport array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_af8d457d912286a98c0975c52d4faf910}\label{class_basic_tutorial__00_af8d457d912286a98c0975c52d4faf910}} 
+Ogre\+::\+Camera $\ast$ {\bfseries m\+Camera\+Arr} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Camera array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a603779b6087698c57b7989e16d8a9b93}\label{class_basic_tutorial__00_a603779b6087698c57b7989e16d8a9b93}} 
+Ogre\+::\+Scene\+Manager $\ast$ {\bfseries m\+Scene\+Mgr\+Arr} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Scene manager array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a700c07f924c71e9fa1885a46f599d934}\label{class_basic_tutorial__00_a700c07f924c71e9fa1885a46f599d934}} 
+Ogre\+Bites\+::\+Sdk\+Camera\+Man $\ast$ {\bfseries m\+Camera\+Man\+Arr} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Camera manager array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ad4cf49678102b9c6e4bc71a2d22f6725}\label{class_basic_tutorial__00_ad4cf49678102b9c6e4bc71a2d22f6725}} 
+Ogre\+::\+Light $\ast$ {\bfseries m\+Light}
+\begin{DoxyCompactList}\small\item\em Light in the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ab898708bcc709949c14f93f34ac4b306}\label{class_basic_tutorial__00_ab898708bcc709949c14f93f34ac4b306}} 
+Ogre\+::\+Entity $\ast$ {\bfseries robot\+Ent} \mbox{[}100\mbox{]}
+\begin{DoxyCompactList}\small\item\em Robot entities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ad40fdc65fce4155efebd3ebc5a244d9c}\label{class_basic_tutorial__00_ad40fdc65fce4155efebd3ebc5a244d9c}} 
+Ogre\+::\+Scene\+Node $\ast$ {\bfseries robot\+Node} \mbox{[}100\mbox{]}
+\begin{DoxyCompactList}\small\item\em Scene nodes of the robots. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a5a38622cc4bb8ff701f35777b23a7fb2}\label{class_basic_tutorial__00_a5a38622cc4bb8ff701f35777b23a7fb2}} 
+Ogre\+::\+Scene\+Node $\ast$ {\bfseries particle} \mbox{[}36\mbox{]}
+\begin{DoxyCompactList}\small\item\em Scene node of the particle systems. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a9d4fb3d0faf51d7113d83ec14f875b9a}\label{class_basic_tutorial__00_a9d4fb3d0faf51d7113d83ec14f875b9a}} 
+Ogre\+::\+Entity $\ast$ {\bfseries sphere\+Ent}
+\begin{DoxyCompactList}\small\item\em Sphere entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a873a25e0c008c52bf8d1d9e399341030}\label{class_basic_tutorial__00_a873a25e0c008c52bf8d1d9e399341030}} 
+Ogre\+::\+Entity $\ast$ {\bfseries ground}
+\begin{DoxyCompactList}\small\item\em Top ground. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a1fb44d57d17844a7b25a782891493b8e}\label{class_basic_tutorial__00_a1fb44d57d17844a7b25a782891493b8e}} 
+Ogre\+::\+Entity $\ast$ {\bfseries ground2}
+\begin{DoxyCompactList}\small\item\em Lower ground. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ae4e86a4900bb7aa6ce79d8591e0336f8}\label{class_basic_tutorial__00_ae4e86a4900bb7aa6ce79d8591e0336f8}} 
+Ogre\+::\+Scene\+Node $\ast$ {\bfseries sphere\+Node}
+\begin{DoxyCompactList}\small\item\em Sphere scene node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a8ada85db081fcbd05c97a45cfe18a6aa}\label{class_basic_tutorial__00_a8ada85db081fcbd05c97a45cfe18a6aa}} 
+Real {\bfseries left}
+\begin{DoxyCompactList}\small\item\em Coordination for the selection rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a61e0a0ebbf5a9e840e7361f3b161fbc1}\label{class_basic_tutorial__00_a61e0a0ebbf5a9e840e7361f3b161fbc1}} 
+Real {\bfseries top}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a166e8915a0f9e89d543cbac55c0a7713}\label{class_basic_tutorial__00_a166e8915a0f9e89d543cbac55c0a7713}} 
+Real {\bfseries right}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a24c00dd93893a2fe627f186e1fc1ded8}\label{class_basic_tutorial__00_a24c00dd93893a2fe627f186e1fc1ded8}} 
+Real {\bfseries bottom}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a150d8d4f2c6b988993e75abf906d4316}\label{class_basic_tutorial__00_a150d8d4f2c6b988993e75abf906d4316}} 
+\mbox{\hyperlink{class_selection_rectangle}{Selection\+Rectangle}} $\ast$ {\bfseries m\+Selection\+Rect}
+\begin{DoxyCompactList}\small\item\em The selection rectangle object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a27d3fe84e77db4856f10c5974e2f6bc6}\label{class_basic_tutorial__00_a27d3fe84e77db4856f10c5974e2f6bc6}} 
+Plane\+Bounded\+Volume\+List\+Scene\+Query $\ast$ {\bfseries m\+Vol\+Query}
+\begin{DoxyCompactList}\small\item\em Query for selected robots. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_af30f70851fcf2cba7745c390d7fad024}\label{class_basic_tutorial__00_af30f70851fcf2cba7745c390d7fad024}} 
+Scene\+Node $\ast$ {\bfseries m\+Current\+Object}
+\begin{DoxyCompactList}\small\item\em Tmp object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_aed15b815e3bc5f0769b6dc7a7e0c4ba4}\label{class_basic_tutorial__00_aed15b815e3bc5f0769b6dc7a7e0c4ba4}} 
+Scene\+Node $\ast$ {\bfseries m\+Particle\+Node}
+\begin{DoxyCompactList}\small\item\em Tmp object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ad52ebab86e3dd0198bc51c8f645e85f7}\label{class_basic_tutorial__00_ad52ebab86e3dd0198bc51c8f645e85f7}} 
+Plane\+Bounded\+Volume\+List {\bfseries Select\+Vol\+List}
+\begin{DoxyCompactList}\small\item\em List for selected robots. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a38fbf7f156e85acc390806bcd5ab09bd}\label{class_basic_tutorial__00_a38fbf7f156e85acc390806bcd5ab09bd}} 
+Vector3 {\bfseries v} \mbox{[}36\mbox{]}
+\begin{DoxyCompactList}\small\item\em Velocity of the robots. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a772ab6133cf730e1acce6757194f89b9}\label{class_basic_tutorial__00_a772ab6133cf730e1acce6757194f89b9}} 
+Animation\+State $\ast$ {\bfseries m\+Animation\+State} \mbox{[}36\mbox{]}
+\begin{DoxyCompactList}\small\item\em Robots\textquotesingle{} animation state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a09336dc7ec66f96aefb72f85ed2dd9fe}\label{class_basic_tutorial__00_a09336dc7ec66f96aefb72f85ed2dd9fe}} 
+bool {\bfseries sphere\+Flg} \mbox{[}36\mbox{]}
+\begin{DoxyCompactList}\small\item\em Flag to detect collision between the shpere and the robots. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ae607167206833583a7b8a87a91036eae}\label{class_basic_tutorial__00_ae607167206833583a7b8a87a91036eae}} 
+bool {\bfseries mouse\+Pressed\+Flg}
+\begin{DoxyCompactList}\small\item\em Flag to detect the mouse button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ad8fb7158fd17eb5fb49c4cf01d297039}\label{class_basic_tutorial__00_ad8fb7158fd17eb5fb49c4cf01d297039}} 
+bool {\bfseries opp\+Flg}
+\begin{DoxyCompactList}\small\item\em Flag to decide the points of the selection rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a0c1c9103be2ce49b7b2042fd7f88ffdd}\label{class_basic_tutorial__00_a0c1c9103be2ce49b7b2042fd7f88ffdd}} 
+bool {\bfseries win\+Flg}
+\begin{DoxyCompactList}\small\item\em Flag of the small map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a54007f192a62a71b1ec3c56630971cd2}\label{class_basic_tutorial__00_a54007f192a62a71b1ec3c56630971cd2}} 
+bool {\bfseries btm\+Ground\+Vis}
+\begin{DoxyCompactList}\small\item\em If the lower ground is visable or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a560d9821accda432c81b8c725c020c36}\label{class_basic_tutorial__00_a560d9821accda432c81b8c725c020c36}} 
+bool {\bfseries particle\+Flg}
+\begin{DoxyCompactList}\small\item\em Flag of visibility of the particle system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ae739c54440d892e39829d1fc06f5b52a}\label{class_basic_tutorial__00_ae739c54440d892e39829d1fc06f5b52a}} 
+bool {\bfseries move\+Flg}
+\begin{DoxyCompactList}\small\item\em Flag of the robots\textquotesingle{} movement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_ae6f6285e25d9cefc6c5eaa93a4c808a2}\label{class_basic_tutorial__00_ae6f6285e25d9cefc6c5eaa93a4c808a2}} 
+Vector3 {\bfseries des}
+\begin{DoxyCompactList}\small\item\em Destination. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+3D Game Programming ~\newline
+My Name\+: Dai Rong Wu ~\newline
+My ID\+: 310551067 ~\newline
+My Email\+: \href{mailto:azusa871227@gmail.com}{\texttt{ azusa871227@gmail.\+com}} ~\newline
+ Date\+: 2021/10/31 ~\newline
+This is an assignment of 3D Game Programming. ~\newline
+Application class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_basic_tutorial__00_aba97a29d983586d2dc8e108d3bccf721}\label{class_basic_tutorial__00_aba97a29d983586d2dc8e108d3bccf721}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!chooseSceneManager@{chooseSceneManager}}
+\index{chooseSceneManager@{chooseSceneManager}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{chooseSceneManager()}{chooseSceneManager()}}
+{\footnotesize\ttfamily void Basic\+Tutorial\+\_\+00\+::choose\+Scene\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Define Scene\+Mgrs. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}\label{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!createCamera@{createCamera}}
+\index{createCamera@{createCamera}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{createCamera()}{createCamera()}}
+{\footnotesize\ttfamily void Basic\+Tutorial\+\_\+00\+::create\+Camera (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Call funcitons to create cameras. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}\label{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!createScene@{createScene}}
+\index{createScene@{createScene}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{createScene()}{createScene()}}
+{\footnotesize\ttfamily void Basic\+Tutorial\+\_\+00\+::create\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Call functions to create scenes. 
+
+
+
+Implements \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}\label{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!createViewports@{createViewports}}
+\index{createViewports@{createViewports}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{createViewports()}{createViewports()}}
+{\footnotesize\ttfamily void Basic\+Tutorial\+\_\+00\+::create\+Viewports (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Call funcitons to create viewports. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_a8d59bcb54aa7e5f92250f4193a6ea2b7}\label{class_basic_tutorial__00_a8d59bcb54aa7e5f92250f4193a6ea2b7}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!frameRenderingQueued@{frameRenderingQueued}}
+\index{frameRenderingQueued@{frameRenderingQueued}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{frameRenderingQueued()}{frameRenderingQueued()}}
+{\footnotesize\ttfamily bool Basic\+Tutorial\+\_\+00\+::frame\+Rendering\+Queued (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deal with the movement of the robots and the animation. ~\newline
+It is a Queue store frame need to be rendered. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}\label{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!keyPressed@{keyPressed}}
+\index{keyPressed@{keyPressed}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{keyPressed()}{keyPressed()}}
+{\footnotesize\ttfamily bool Basic\+Tutorial\+\_\+00\+::key\+Pressed (\begin{DoxyParamCaption}\item[{const OIS\+::\+Key\+Event \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Deal with the key pressed events. ~\newline
+ Perform the task as the spec requires. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}\label{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!keyReleased@{keyReleased}}
+\index{keyReleased@{keyReleased}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{keyReleased()}{keyReleased()}}
+{\footnotesize\ttfamily bool Basic\+Tutorial\+\_\+00\+::key\+Released (\begin{DoxyParamCaption}\item[{const OIS\+::\+Key\+Event \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Deal with the key released events. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_a5b9bd30851c38fa6c2fa102f30e9629a}\label{class_basic_tutorial__00_a5b9bd30851c38fa6c2fa102f30e9629a}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!mouseMoved@{mouseMoved}}
+\index{mouseMoved@{mouseMoved}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{mouseMoved()}{mouseMoved()}}
+{\footnotesize\ttfamily bool Basic\+Tutorial\+\_\+00\+::mouse\+Moved (\begin{DoxyParamCaption}\item[{const OIS\+::\+Mouse\+Event \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deal with the task when mouse is moved. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_af0e5dec72c58e157c2a63ffa5fd8c7c7}\label{class_basic_tutorial__00_af0e5dec72c58e157c2a63ffa5fd8c7c7}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!mousePressed@{mousePressed}}
+\index{mousePressed@{mousePressed}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{mousePressed()}{mousePressed()}}
+{\footnotesize\ttfamily bool Basic\+Tutorial\+\_\+00\+::mouse\+Pressed (\begin{DoxyParamCaption}\item[{const OIS\+::\+Mouse\+Event \&}]{arg,  }\item[{OIS\+::\+Mouse\+Button\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deal with the task when mouse is pressed. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_aeb28d7b68dcaf536f513e25afb6947d7}\label{class_basic_tutorial__00_aeb28d7b68dcaf536f513e25afb6947d7}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!mouseReleased@{mouseReleased}}
+\index{mouseReleased@{mouseReleased}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{mouseReleased()}{mouseReleased()}}
+{\footnotesize\ttfamily bool Basic\+Tutorial\+\_\+00\+::mouse\+Released (\begin{DoxyParamCaption}\item[{const OIS\+::\+Mouse\+Event \&}]{arg,  }\item[{OIS\+::\+Mouse\+Button\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deal with the task when mouse is moved. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dora/\+Desktop/source/Tutorial\+Application.\+h\item 
+C\+:/\+Users/\+Dora/\+Desktop/source/Tutorial\+Application.\+cpp\end{DoxyCompactItemize}

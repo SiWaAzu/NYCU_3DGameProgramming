@@ -1,0 +1,60 @@
+\hypertarget{_tutorial_application_8h_source}{}\doxysection{Tutorial\+Application.\+h}
+\label{_tutorial_application_8h_source}\index{D:/hw01\_310551067/programs/3DGP\_201909\_01\_MultiViewports\_Template/source/TutorialApplication.h@{D:/hw01\_310551067/programs/3DGP\_201909\_01\_MultiViewports\_Template/source/TutorialApplication.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// 3D Game Programming}}
+\DoxyCodeLine{3 \textcolor{comment}{// NCTU}}
+\DoxyCodeLine{4 \textcolor{comment}{// Instructor: SAI-\/KEUNG WONG}}
+\DoxyCodeLine{5 \textcolor{comment}{//}}
+\DoxyCodeLine{19 \textcolor{comment}{}}
+\DoxyCodeLine{20 \textcolor{comment}{// You can delete or add some functions to do the assignment.}}
+\DoxyCodeLine{22 \textcolor{comment}{}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#ifndef \_\_BasicTutorial\_00\_h\_}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define \_\_BasicTutorial\_00\_h\_}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include "{}BaseApplication.h"{}}}
+\DoxyCodeLine{31 \textcolor{keyword}{class }\mbox{\hyperlink{class_basic_tutorial__00}{BasicTutorial\_00}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_base_application}{BaseApplication}}}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_basic_tutorial__00}{BasicTutorial\_00}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{35     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} chooseSceneManager(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{39     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}{createCamera}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{43     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}{createViewports}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{47     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}{createScene}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{48     }
+\DoxyCodeLine{49     }
+\DoxyCodeLine{50     \textcolor{comment}{//}}
+\DoxyCodeLine{57 \textcolor{comment}{}    \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_a94e281a96584a25bf57b1c5e73737c81}{frameStarted}}(\textcolor{keyword}{const} Ogre::FrameEvent\& evt);}
+\DoxyCodeLine{58     \textcolor{comment}{//}}
+\DoxyCodeLine{59     \textcolor{comment}{// Add your own stuff.}}
+\DoxyCodeLine{60     \textcolor{comment}{//}}
+\DoxyCodeLine{61 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a6d4684502f2f7b2cf628a975d7750d8e}{createViewport\_00}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a2801a2f0d91d80b471da48344d2ccccf}{createViewport\_01}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a3479c50dbf8dc06a7ea77014eb94c6e7}{createCamera\_00}}();}
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a8745a127adeb69fa769f832fd41412c0}{createCamera\_01}}();}
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_aa84173e509858146cbfb98274c1ef56e}{createScene\_00}}();}
+\DoxyCodeLine{105     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_aad14e1ca565797c4b7dcff31bc0e1494}{createScene\_01}}();}
+\DoxyCodeLine{118     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}{keyPressed}}( \textcolor{keyword}{const} OIS::KeyEvent \&arg );}
+\DoxyCodeLine{125     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}{keyReleased}}( \textcolor{keyword}{const} OIS::KeyEvent \&arg );}
+\DoxyCodeLine{126     \textcolor{comment}{//}}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128     \textcolor{comment}{// Add your own stuff.}}
+\DoxyCodeLine{129     \textcolor{comment}{//}}
+\DoxyCodeLine{130 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{131     Ogre::Viewport* mViewportArr[8];}
+\DoxyCodeLine{132     Ogre::Camera* mCameraArr[8];}
+\DoxyCodeLine{133     Ogre::SceneManager* mSceneMgrArr[8];}
+\DoxyCodeLine{134     OgreBites::SdkCameraMan* mCameraManArr[8];}
+\DoxyCodeLine{135     \textcolor{comment}{//bool animationFlag;}}
+\DoxyCodeLine{136     }
+\DoxyCodeLine{137     \textcolor{comment}{//}}
+\DoxyCodeLine{138     \textcolor{comment}{// Add your own stuff.}}
+\DoxyCodeLine{139     \textcolor{comment}{//}}
+\DoxyCodeLine{140 \};}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \#ifndef \_\_BasicTutorial\_00\_h\_}}
+
+\end{DoxyCode}

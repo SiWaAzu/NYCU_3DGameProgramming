@@ -1,0 +1,27 @@
+﻿已經開始建置於 2021/10/04 1:18:37。
+     1>節點 2 (build 目標) 上的專案 "C:\Users\Dora\Desktop\作業desu\3D_Game\3DGP_Assignment_Template_201909\programs\3DGP_201909_01_MultiViewports_Template\demo_hello.vcxproj"。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(298,5): warning MSB8004: Intermediate 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Intermediate 目錄。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
+     1>InitializeBuildStatus:
+         正在變更時間戳記 "Debug\demo_hello.unsuccessfulbuild"。
+       ClCompile:
+         d:\user\VS\VC\bin\CL.exe /c /I..\..\include\OGRE /I..\..\include\OIS /I..\..\boost_1_42 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\TutorialApplication.cpp
+         TutorialApplication.cpp
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(27): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(142): error C2374: 'h' : 重複定義; 多個初始設定
+                 c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(139) : 請參閱 'h' 的宣告
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(253): warning C4305: '引數' : 從 'double' 轉換為 'const Ogre::Real'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(253): warning C4305: '引數' : 從 'double' 轉換為 'const Ogre::Real'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(253): warning C4305: '引數' : 從 'double' 轉換為 'const Ogre::Real'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(255): warning C4305: '引數' : 從 'double' 轉換為 'const Ogre::Real'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(255): warning C4305: '引數' : 從 'double' 轉換為 'const Ogre::Real'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(255): warning C4305: '引數' : 從 'double' 轉換為 'const Ogre::Real'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(296): warning C4305: '引數' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(296): warning C4305: '引數' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(296): warning C4305: '引數' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>c:\users\dora\desktop\作業desu\3d_game\3dgp_assignment_template_201909\programs\3dgp_201909_01_multiviewports_template\source\tutorialapplication.cpp(296): warning C4305: '引數' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+     1>專案 "C:\Users\Dora\Desktop\作業desu\3D_Game\3DGP_Assignment_Template_201909\programs\3DGP_201909_01_MultiViewports_Template\demo_hello.vcxproj" (build 目標) 建置完成 -- 失敗。
+
+建置失敗。
+
+經過時間 00:00:09.41

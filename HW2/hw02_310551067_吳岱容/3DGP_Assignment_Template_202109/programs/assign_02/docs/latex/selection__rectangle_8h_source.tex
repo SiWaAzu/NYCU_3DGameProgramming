@@ -1,0 +1,113 @@
+\hypertarget{selection__rectangle_8h_source}{}\doxysection{selection\+\_\+rectangle.\+h}
+\label{selection__rectangle_8h_source}\index{C:/Users/Dora/Desktop/source/selection\_rectangle.h@{C:/Users/Dora/Desktop/source/selection\_rectangle.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// 3D Game Programming}}
+\DoxyCodeLine{3 \textcolor{comment}{// NYCU}}
+\DoxyCodeLine{4 \textcolor{comment}{// Instructor: SAI-\/KEUNG WONG}}
+\DoxyCodeLine{5 \textcolor{comment}{//}}
+\DoxyCodeLine{21 \textcolor{comment}{}\textcolor{preprocessor}{\#ifndef \_\_SelectionRectangle\_h\_\_}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define \_\_SelectionRectangle\_h\_\_}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <OgreCamera.h>}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <OgreEntity.h>}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include <OgreLogManager.h>}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <OgreRoot.h>}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include <OgreViewport.h>}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include <OgreSceneManager.h>}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include <OgreRenderWindow.h>}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include <OgreConfigFile.h>}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{using namespace }Ogre;}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{class }\mbox{\hyperlink{class_selection_rectangle}{SelectionRectangle}} : \textcolor{keyword}{public} ManualObject}
+\DoxyCodeLine{36 \{}
+\DoxyCodeLine{37 \textcolor{keyword}{public}:}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_selection_rectangle}{SelectionRectangle}}(\textcolor{keyword}{const} String \&name)}
+\DoxyCodeLine{39         : ManualObject(name)}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41         mDT = 0.01;}
+\DoxyCodeLine{42         setUseIdentityProjection(\textcolor{keyword}{true});}
+\DoxyCodeLine{43         setUseIdentityView(\textcolor{keyword}{true});}
+\DoxyCodeLine{44         setRenderQueueGroup(RENDER\_QUEUE\_OVERLAY);}
+\DoxyCodeLine{45         setQueryFlags(0);}
+\DoxyCodeLine{46         }
+\DoxyCodeLine{47     \}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{52 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_selection_rectangle_a4b5280eb3512b829c5ef53875e88ffd5}{updateDT}}(Real t)}
+\DoxyCodeLine{53 \{}
+\DoxyCodeLine{54     mDT += t;}
+\DoxyCodeLine{55 \}}
+\DoxyCodeLine{59 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_selection_rectangle_a8f772ad503b0801af9831546d2b80199}{updateMesh}}()}
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61     \mbox{\hyperlink{class_selection_rectangle_a89a4528287559860ed9f2a3e6152f275}{setCorners}}(mLeft, mTop, mRight, mBottom);}
+\DoxyCodeLine{62 \}}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_selection_rectangle_a89a4528287559860ed9f2a3e6152f275}{setCorners}}(\textcolor{keywordtype}{float} left, \textcolor{keywordtype}{float} top, \textcolor{keywordtype}{float} right, \textcolor{keywordtype}{float} bottom)}
+\DoxyCodeLine{67     \{}
+\DoxyCodeLine{68         mLeft = left;}
+\DoxyCodeLine{69         mTop = top;}
+\DoxyCodeLine{70         mRight = right;}
+\DoxyCodeLine{71         mBottom = bottom;}
+\DoxyCodeLine{72         \textcolor{comment}{//Mapping to Ogre3D Projection Plane Space}}
+\DoxyCodeLine{73         \textcolor{comment}{//BEGIN Using CEGUI}}
+\DoxyCodeLine{74         \textcolor{comment}{//left = left * 2 -\/ 1;}}
+\DoxyCodeLine{75         \textcolor{comment}{//right = right * 2 -\/ 1;}}
+\DoxyCodeLine{76         \textcolor{comment}{//top = 1 -\/ top * 2;}}
+\DoxyCodeLine{77         \textcolor{comment}{//bottom = 1 -\/ bottom * 2;}}
+\DoxyCodeLine{78         \textcolor{comment}{//End USING CEGUI}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80         \textcolor{comment}{//BEGIN Using TrayMgr}}
+\DoxyCodeLine{81         left = left * 2 -\/ 1;}
+\DoxyCodeLine{82         right = right * 2 -\/ 1;}
+\DoxyCodeLine{83         top = -\/1 -\/ top * 2;}
+\DoxyCodeLine{84         bottom = -\/1 -\/bottom * 2;}
+\DoxyCodeLine{85         \textcolor{comment}{//End USING TrayMgr}}
+\DoxyCodeLine{87 \textcolor{comment}{}        Real z = -\/1;}
+\DoxyCodeLine{88         clear();}
+\DoxyCodeLine{89         \textcolor{comment}{/*}}
+\DoxyCodeLine{90 \textcolor{comment}{        begin("{}Examples/Hilite/Yellow"{}, RenderOperation::OT\_LINE\_STRIP);}}
+\DoxyCodeLine{91 \textcolor{comment}{        colour(1, 1, 1);}}
+\DoxyCodeLine{92 \textcolor{comment}{        position(left, top, z);}}
+\DoxyCodeLine{93 \textcolor{comment}{        position(right, top, z);}}
+\DoxyCodeLine{94 \textcolor{comment}{        position(right, bottom, z);}}
+\DoxyCodeLine{95 \textcolor{comment}{        position(left, bottom, z);}}
+\DoxyCodeLine{96 \textcolor{comment}{        position(left, top, z);}}
+\DoxyCodeLine{97 \textcolor{comment}{        */}}
+\DoxyCodeLine{98         }
+\DoxyCodeLine{100         \textcolor{comment}{//}}
+\DoxyCodeLine{101         \textcolor{comment}{//  1-\/-\/-\/-\/0}}
+\DoxyCodeLine{102         \textcolor{comment}{//  | \(\backslash\)  | }}
+\DoxyCodeLine{103         \textcolor{comment}{//  |  \(\backslash\) |}}
+\DoxyCodeLine{104         \textcolor{comment}{//  3-\/-\/-\/-\/2 }}
+\DoxyCodeLine{105         }
+\DoxyCodeLine{106         begin(\textcolor{stringliteral}{"{}Examples/Hilite/Yellow"{}}, RenderOperation::OT\_TRIANGLE\_STRIP);}
+\DoxyCodeLine{107         \textcolor{comment}{//colour(1, 1, 1);}}
+\DoxyCodeLine{108         \textcolor{comment}{//begin("{}"{}, RenderOperation::OT\_TRIANGLE\_STRIP);}}
+\DoxyCodeLine{109         }
+\DoxyCodeLine{110         }
+\DoxyCodeLine{111         position(right, top, z);}
+\DoxyCodeLine{112         textureCoord(5*mDT, 10);}
+\DoxyCodeLine{113         position(left, top, z);}
+\DoxyCodeLine{114         textureCoord(0, 10);}
+\DoxyCodeLine{115         position(right, bottom, z);}
+\DoxyCodeLine{116         textureCoord(5*mDT, 0);}
+\DoxyCodeLine{117         position(left, bottom, z);}
+\DoxyCodeLine{118         textureCoord(0, 0);}
+\DoxyCodeLine{120     }
+\DoxyCodeLine{122         }
+\DoxyCodeLine{123         end();}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125         AxisAlignedBox box;}
+\DoxyCodeLine{126         box.setInfinite();}
+\DoxyCodeLine{127         setBoundingBox(box);}
+\DoxyCodeLine{128     \}}
+\DoxyCodeLine{129 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{130     Real mDT;}
+\DoxyCodeLine{131     Real mLeft, mTop, mRight, mBottom;}
+\DoxyCodeLine{132 \};}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

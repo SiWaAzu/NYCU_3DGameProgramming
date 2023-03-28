@@ -1,0 +1,91 @@
+\hypertarget{_tutorial_application_8h_source}{}\doxysection{Tutorial\+Application.\+h}
+\label{_tutorial_application_8h_source}\index{C:/Users/Dora/Desktop/source/TutorialApplication.h@{C:/Users/Dora/Desktop/source/TutorialApplication.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// 3D Game Programming}}
+\DoxyCodeLine{3 \textcolor{comment}{// NYCU}}
+\DoxyCodeLine{4 \textcolor{comment}{// Instructor: SAI-\/KEUNG WONG}}
+\DoxyCodeLine{5 \textcolor{comment}{//}}
+\DoxyCodeLine{21 \textcolor{comment}{}}
+\DoxyCodeLine{22 \textcolor{comment}{// You can delete or add some functions to do the assignment.}}
+\DoxyCodeLine{24 \textcolor{comment}{}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#ifndef \_\_BasicTutorial\_00\_h\_}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define \_\_BasicTutorial\_00\_h\_}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}BaseApplication.h"{}}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include "{}selection\_rectangle.h"{}}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{class }\mbox{\hyperlink{class_basic_tutorial__00}{BasicTutorial\_00}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_base_application}{BaseApplication}}}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_basic_tutorial__00}{BasicTutorial\_00}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{38     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_aba97a29d983586d2dc8e108d3bccf721}{chooseSceneManager}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{42     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}{createCamera}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{46     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}{createViewports}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{50     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}{createScene}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{54     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_a5b9bd30851c38fa6c2fa102f30e9629a}{mouseMoved}}( \textcolor{keyword}{const} OIS::MouseEvent \&arg );}
+\DoxyCodeLine{58     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_af0e5dec72c58e157c2a63ffa5fd8c7c7}{mousePressed}}( \textcolor{keyword}{const} OIS::MouseEvent \&arg, OIS::MouseButtonID \textcolor{keywordtype}{id} );}
+\DoxyCodeLine{62     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_aeb28d7b68dcaf536f513e25afb6947d7}{mouseReleased}}( \textcolor{keyword}{const} OIS::MouseEvent \&arg, OIS::MouseButtonID \textcolor{keywordtype}{id} );}
+\DoxyCodeLine{68     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_a8d59bcb54aa7e5f92250f4193a6ea2b7}{frameRenderingQueued}}(\textcolor{keyword}{const} Ogre::FrameEvent\& evt);}
+\DoxyCodeLine{69     }
+\DoxyCodeLine{70     }
+\DoxyCodeLine{75     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_a94e281a96584a25bf57b1c5e73737c81}{frameStarted}}(\textcolor{keyword}{const} Ogre::FrameEvent\& evt);}
+\DoxyCodeLine{76     \textcolor{comment}{//}}
+\DoxyCodeLine{77     \textcolor{comment}{// Add your own stuff.}}
+\DoxyCodeLine{78     \textcolor{comment}{//}}
+\DoxyCodeLine{79 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a6d4684502f2f7b2cf628a975d7750d8e}{createViewport\_00}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a2801a2f0d91d80b471da48344d2ccccf}{createViewport\_01}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{95     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a3479c50dbf8dc06a7ea77014eb94c6e7}{createCamera\_00}}();}
+\DoxyCodeLine{101     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a8745a127adeb69fa769f832fd41412c0}{createCamera\_01}}();}
+\DoxyCodeLine{110     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_aa84173e509858146cbfb98274c1ef56e}{createScene\_00}}();}
+\DoxyCodeLine{114     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_aad14e1ca565797c4b7dcff31bc0e1494}{createScene\_01}}();}
+\DoxyCodeLine{119     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}{keyPressed}}( \textcolor{keyword}{const} OIS::KeyEvent \&arg );}
+\DoxyCodeLine{123     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}{keyReleased}}( \textcolor{keyword}{const} OIS::KeyEvent \&arg );}
+\DoxyCodeLine{128     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_aba8ab595a3f9395bcfedd8c42861060a}{initParticleSystemForExplosion}}();}
+\DoxyCodeLine{133     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basic_tutorial__00_a12ee4c02ecf504f5ac0112706bc88b28}{setOffParticleSystem}}();}
+\DoxyCodeLine{134     \textcolor{comment}{//}}
+\DoxyCodeLine{135     \textcolor{comment}{// Add your own stuff.}}
+\DoxyCodeLine{136     \textcolor{comment}{//}}
+\DoxyCodeLine{137 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{141     Ogre::Viewport* \mbox{\hyperlink{class_basic_tutorial__00_a6676a92b50e9b43634d4c66488537b73}{mViewportArr}}[8];}
+\DoxyCodeLine{145     Ogre::Camera* \mbox{\hyperlink{class_basic_tutorial__00_af8d457d912286a98c0975c52d4faf910}{mCameraArr}}[8];}
+\DoxyCodeLine{149     Ogre::SceneManager* \mbox{\hyperlink{class_basic_tutorial__00_a603779b6087698c57b7989e16d8a9b93}{mSceneMgrArr}}[8];}
+\DoxyCodeLine{153     OgreBites::SdkCameraMan* \mbox{\hyperlink{class_basic_tutorial__00_a700c07f924c71e9fa1885a46f599d934}{mCameraManArr}}[8];}
+\DoxyCodeLine{157     Ogre::Light *\mbox{\hyperlink{class_basic_tutorial__00_ad4cf49678102b9c6e4bc71a2d22f6725}{mLight}};}
+\DoxyCodeLine{161     Ogre::Entity *\mbox{\hyperlink{class_basic_tutorial__00_ab898708bcc709949c14f93f34ac4b306}{robotEnt}}[100];}
+\DoxyCodeLine{165     Ogre::SceneNode *\mbox{\hyperlink{class_basic_tutorial__00_ad40fdc65fce4155efebd3ebc5a244d9c}{robotNode}}[100];}
+\DoxyCodeLine{169     Ogre::SceneNode *\mbox{\hyperlink{class_basic_tutorial__00_a5a38622cc4bb8ff701f35777b23a7fb2}{particle}}[36];}
+\DoxyCodeLine{173     Ogre::Entity *\mbox{\hyperlink{class_basic_tutorial__00_a9d4fb3d0faf51d7113d83ec14f875b9a}{sphereEnt}};}
+\DoxyCodeLine{177     Ogre::Entity *\mbox{\hyperlink{class_basic_tutorial__00_a873a25e0c008c52bf8d1d9e399341030}{ground}};}
+\DoxyCodeLine{181     Ogre::Entity *\mbox{\hyperlink{class_basic_tutorial__00_a1fb44d57d17844a7b25a782891493b8e}{ground2}}; }
+\DoxyCodeLine{185     Ogre::SceneNode *\mbox{\hyperlink{class_basic_tutorial__00_ae4e86a4900bb7aa6ce79d8591e0336f8}{sphereNode}};}
+\DoxyCodeLine{189     Real \mbox{\hyperlink{class_basic_tutorial__00_a8ada85db081fcbd05c97a45cfe18a6aa}{left}}, top, right, bottom;}
+\DoxyCodeLine{193     \mbox{\hyperlink{class_selection_rectangle}{SelectionRectangle}} *\mbox{\hyperlink{class_basic_tutorial__00_a150d8d4f2c6b988993e75abf906d4316}{mSelectionRect}};}
+\DoxyCodeLine{197     PlaneBoundedVolumeListSceneQuery *\mbox{\hyperlink{class_basic_tutorial__00_a27d3fe84e77db4856f10c5974e2f6bc6}{mVolQuery}};}
+\DoxyCodeLine{201     SceneNode *\mbox{\hyperlink{class_basic_tutorial__00_af30f70851fcf2cba7745c390d7fad024}{mCurrentObject}};}
+\DoxyCodeLine{205     SceneNode *\mbox{\hyperlink{class_basic_tutorial__00_aed15b815e3bc5f0769b6dc7a7e0c4ba4}{mParticleNode}};}
+\DoxyCodeLine{209     PlaneBoundedVolumeList \mbox{\hyperlink{class_basic_tutorial__00_ad52ebab86e3dd0198bc51c8f645e85f7}{SelectVolList}};}
+\DoxyCodeLine{213     Vector3 \mbox{\hyperlink{class_basic_tutorial__00_a38fbf7f156e85acc390806bcd5ab09bd}{v}}[36];}
+\DoxyCodeLine{217     AnimationState *\mbox{\hyperlink{class_basic_tutorial__00_a772ab6133cf730e1acce6757194f89b9}{mAnimationState}}[36];}
+\DoxyCodeLine{221     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_a09336dc7ec66f96aefb72f85ed2dd9fe}{sphereFlg}}[36];}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{226     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_ae607167206833583a7b8a87a91036eae}{mousePressedFlg}};}
+\DoxyCodeLine{230     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_ad8fb7158fd17eb5fb49c4cf01d297039}{oppFlg}};}
+\DoxyCodeLine{234     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_a0c1c9103be2ce49b7b2042fd7f88ffdd}{winFlg}};}
+\DoxyCodeLine{238     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_a54007f192a62a71b1ec3c56630971cd2}{btmGroundVis}};}
+\DoxyCodeLine{242     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_a560d9821accda432c81b8c725c020c36}{particleFlg}};}
+\DoxyCodeLine{246     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_basic_tutorial__00_ae739c54440d892e39829d1fc06f5b52a}{moveFlg}};}
+\DoxyCodeLine{247 }
+\DoxyCodeLine{251     Vector3 \mbox{\hyperlink{class_basic_tutorial__00_ae6f6285e25d9cefc6c5eaa93a4c808a2}{des}};}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253     \textcolor{comment}{//}}
+\DoxyCodeLine{254     \textcolor{comment}{// Add your own stuff.}}
+\DoxyCodeLine{255     \textcolor{comment}{//}}
+\DoxyCodeLine{256 \};}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{258 }
+\DoxyCodeLine{259 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \#ifndef \_\_BasicTutorial\_00\_h\_}}
+
+\end{DoxyCode}

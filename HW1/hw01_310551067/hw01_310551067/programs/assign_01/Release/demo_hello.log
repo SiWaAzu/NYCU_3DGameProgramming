@@ -1,0 +1,19 @@
+﻿已經開始建置於 2021/10/06 19:50:08。
+     1>節點 2 (build 目標) 上的專案 "D:\hw01_310551067\programs\3DGP_201909_01_MultiViewports_Template\demo_hello.vcxproj"。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(298,5): warning MSB8004: Intermediate 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Intermediate 目錄。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
+     1>InitializeBuildStatus:
+         由於指定了 "AlwaysCreate"，因此正在建立 "Release\demo_hello.unsuccessfulbuild"。
+       ClCompile:
+         所有輸出都是最新的。
+       Link:
+         所有輸出都是最新的。
+         demo_hello.vcxproj -> D:\hw01_310551067\programs\3DGP_201909_01_MultiViewports_Template\bin\Release\demo_hello.exe
+       FinalizeBuildStatus:
+         正在刪除檔案 "Release\demo_hello.unsuccessfulbuild"。
+         正在變更時間戳記 "Release\demo_hello.lastbuildstate"。
+     1>專案 "D:\hw01_310551067\programs\3DGP_201909_01_MultiViewports_Template\demo_hello.vcxproj" (build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:00.32

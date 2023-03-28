@@ -1,0 +1,201 @@
+\hypertarget{class_basic_tutorial__00}{}\doxysection{Basic\+Tutorial\+\_\+00 Class Reference}
+\label{class_basic_tutorial__00}\index{BasicTutorial\_00@{BasicTutorial\_00}}
+
+
+3D Game Programming ~\newline
+My Name\+: Dai Rong Wu ~\newline
+My ID\+: 310551067 ~\newline
+My Email\+: \href{mailto:azusa871227@gmail.com}{\texttt{ azusa871227@gmail.\+com}} ~\newline
+ Date\+: 2019/09/20  
+
+
+
+
+{\ttfamily \#include $<$Tutorial\+Application.\+h$>$}
+
+Inheritance diagram for Basic\+Tutorial\+\_\+00\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.909091cm]{class_basic_tutorial__00}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_basic_tutorial__00_aba97a29d983586d2dc8e108d3bccf721}{choose\+Scene\+Manager}} (void)
+\item 
+virtual void \mbox{\hyperlink{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}{create\+Camera}} (void)
+\begin{DoxyCompactList}\small\item\em Call funcitons to create 2 cameras. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}{create\+Viewports}} (void)
+\begin{DoxyCompactList}\small\item\em call funcitons to create 2 viewports \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}{create\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em call functions to create 2 scenes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a94e281a96584a25bf57b1c5e73737c81}\label{class_basic_tutorial__00_a94e281a96584a25bf57b1c5e73737c81}} 
+virtual bool {\bfseries frame\+Started} (const Ogre\+::\+Frame\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Implement animation ~\newline
+Implement animation when the frame refresh if the animation flag is flipped. ~\newline
+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a6d4684502f2f7b2cf628a975d7750d8e}\label{class_basic_tutorial__00_a6d4684502f2f7b2cf628a975d7750d8e}} 
+void {\bfseries create\+Viewport\+\_\+00} (void)
+\begin{DoxyCompactList}\small\item\em Create a viewport ~\newline
+Create a viewport for the entire screen. ~\newline
+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a2801a2f0d91d80b471da48344d2ccccf}\label{class_basic_tutorial__00_a2801a2f0d91d80b471da48344d2ccccf}} 
+void {\bfseries create\+Viewport\+\_\+01} (void)
+\begin{DoxyCompactList}\small\item\em Create sub viewport ~\newline
+Create Second viewport, and locate it on the left top, also set the z order. ~\newline
+Also we set background color. ~\newline
+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a3479c50dbf8dc06a7ea77014eb94c6e7}\label{class_basic_tutorial__00_a3479c50dbf8dc06a7ea77014eb94c6e7}} 
+void {\bfseries create\+Camera\+\_\+00} ()
+\begin{DoxyCompactList}\small\item\em Create main camera ~\newline
+Create main camera, set the direction, position, and clip distance, and also give it manipulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a8745a127adeb69fa769f832fd41412c0}\label{class_basic_tutorial__00_a8745a127adeb69fa769f832fd41412c0}} 
+void {\bfseries create\+Camera\+\_\+01} ()
+\begin{DoxyCompactList}\small\item\em Create sub camera ~\newline
+Create the camera for second viewport, also set its direction, position, and clip distance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_aa84173e509858146cbfb98274c1ef56e}\label{class_basic_tutorial__00_aa84173e509858146cbfb98274c1ef56e}} 
+void {\bfseries create\+Scene\+\_\+00} ()
+\begin{DoxyCompactList}\small\item\em Create main scene ~\newline
+Create main scene, including a plane, two penguins and cubes, enabling lights and shadow. ~\newline
+Also set the entities\textquotesingle{}s scales, positions, and directions. ~\newline
+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_aad14e1ca565797c4b7dcff31bc0e1494}\label{class_basic_tutorial__00_aad14e1ca565797c4b7dcff31bc0e1494}} 
+void {\bfseries create\+Scene\+\_\+01} ()
+\begin{DoxyCompactList}\small\item\em Create second scene ~\newline
+Create second scene, including a plane and a cube. ~\newline
+. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}{key\+Pressed}} (const OIS\+::\+Key\+Event \&arg)
+\begin{DoxyCompactList}\small\item\em Set key pressed events ~\newline
+Set required key pressing event. ~\newline
+key 1$\sim$5 for different camera position. ~\newline
+key M / N for differet viewports showing on the window. ~\newline
+key P for triggering animation. ~\newline
+. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}{key\+Released}} (const OIS\+::\+Key\+Event \&arg)
+\begin{DoxyCompactList}\small\item\em Set key released events ~\newline
+Didn\textquotesingle{}t modify any thing. ~\newline
+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a6676a92b50e9b43634d4c66488537b73}\label{class_basic_tutorial__00_a6676a92b50e9b43634d4c66488537b73}} 
+Ogre\+::\+Viewport $\ast$ {\bfseries m\+Viewport\+Arr} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_af8d457d912286a98c0975c52d4faf910}\label{class_basic_tutorial__00_af8d457d912286a98c0975c52d4faf910}} 
+Ogre\+::\+Camera $\ast$ {\bfseries m\+Camera\+Arr} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a603779b6087698c57b7989e16d8a9b93}\label{class_basic_tutorial__00_a603779b6087698c57b7989e16d8a9b93}} 
+Ogre\+::\+Scene\+Manager $\ast$ {\bfseries m\+Scene\+Mgr\+Arr} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{class_basic_tutorial__00_a700c07f924c71e9fa1885a46f599d934}\label{class_basic_tutorial__00_a700c07f924c71e9fa1885a46f599d934}} 
+Ogre\+Bites\+::\+Sdk\+Camera\+Man $\ast$ {\bfseries m\+Camera\+Man\+Arr} \mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+3D Game Programming ~\newline
+My Name\+: Dai Rong Wu ~\newline
+My ID\+: 310551067 ~\newline
+My Email\+: \href{mailto:azusa871227@gmail.com}{\texttt{ azusa871227@gmail.\+com}} ~\newline
+ Date\+: 2019/09/20 
+
+This is an assignment of 3D Game Programming I didn\textquotesingle{}t modify any thing in this headfile. This class define the function we use and the members. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_basic_tutorial__00_aba97a29d983586d2dc8e108d3bccf721}\label{class_basic_tutorial__00_aba97a29d983586d2dc8e108d3bccf721}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!chooseSceneManager@{chooseSceneManager}}
+\index{chooseSceneManager@{chooseSceneManager}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{chooseSceneManager()}{chooseSceneManager()}}
+{\footnotesize\ttfamily void Basic\+Tutorial\+\_\+00\+::choose\+Scene\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}\label{class_basic_tutorial__00_a1bf709417d654dffc2ea10987412b912}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!createCamera@{createCamera}}
+\index{createCamera@{createCamera}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{createCamera()}{createCamera()}}
+{\footnotesize\ttfamily void Basic\+Tutorial\+\_\+00\+::create\+Camera (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Call funcitons to create 2 cameras. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}\label{class_basic_tutorial__00_a15a3d4673724ec99077ce992f996a550}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!createScene@{createScene}}
+\index{createScene@{createScene}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{createScene()}{createScene()}}
+{\footnotesize\ttfamily void Basic\+Tutorial\+\_\+00\+::create\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+call functions to create 2 scenes 
+
+
+
+Implements \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}\label{class_basic_tutorial__00_adc2454d9f8226e0958ecf702f355846e}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!createViewports@{createViewports}}
+\index{createViewports@{createViewports}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{createViewports()}{createViewports()}}
+{\footnotesize\ttfamily void Basic\+Tutorial\+\_\+00\+::create\+Viewports (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+call funcitons to create 2 viewports 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}\label{class_basic_tutorial__00_adc1a0b32d78b1980b3ee51a1b1e1e69b}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!keyPressed@{keyPressed}}
+\index{keyPressed@{keyPressed}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{keyPressed()}{keyPressed()}}
+{\footnotesize\ttfamily bool Basic\+Tutorial\+\_\+00\+::key\+Pressed (\begin{DoxyParamCaption}\item[{const OIS\+::\+Key\+Event \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Set key pressed events ~\newline
+Set required key pressing event. ~\newline
+key 1$\sim$5 for different camera position. ~\newline
+key M / N for differet viewports showing on the window. ~\newline
+key P for triggering animation. ~\newline
+. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+\mbox{\Hypertarget{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}\label{class_basic_tutorial__00_aacca7a0a2a5a0e0d007b9c6c30b4941b}} 
+\index{BasicTutorial\_00@{BasicTutorial\_00}!keyReleased@{keyReleased}}
+\index{keyReleased@{keyReleased}!BasicTutorial\_00@{BasicTutorial\_00}}
+\doxysubsubsection{\texorpdfstring{keyReleased()}{keyReleased()}}
+{\footnotesize\ttfamily bool Basic\+Tutorial\+\_\+00\+::key\+Released (\begin{DoxyParamCaption}\item[{const OIS\+::\+Key\+Event \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Set key released events ~\newline
+Didn\textquotesingle{}t modify any thing. ~\newline
+. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_application}{Base\+Application}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/hw01\+\_\+310551067/programs/3\+DGP\+\_\+201909\+\_\+01\+\_\+\+Multi\+Viewports\+\_\+\+Template/source/Tutorial\+Application.\+h\item 
+D\+:/hw01\+\_\+310551067/programs/3\+DGP\+\_\+201909\+\_\+01\+\_\+\+Multi\+Viewports\+\_\+\+Template/source/Tutorial\+Application.\+cpp\end{DoxyCompactItemize}
